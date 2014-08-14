@@ -1,0 +1,128 @@
+p, a, a:hover, a:visited, h1, h2, h3, h4, div, ul, li, img {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+.clr {
+    clear: both
+}
+
+#top {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 240px;
+    height: 72px;
+    float: left;
+}
+
+#top-menu {
+    float: right;
+    margin-top: 12px;
+}
+
+#top-menu li {
+    float: left;
+    margin: 0 6px;
+    font-weight: bolder;
+}
+
+#top-menu li a, #top-menu li a:hover, #top-menu li a:visited {
+    color: #FFF;
+    font-size: 18px;
+}
+
+#main {
+    margin: 0 auto;
+    text-align: center;
+    width: 900px;
+    height: 1980px;
+    background: #fff;
+}
+
+#help {
+    width: 100%;
+    height: 76px;
+    background: #d4ecf7;
+}
+
+#help-title {
+    float: left;
+    margin-left: 12px;
+    line-height: 76px;
+    font-size: 28px;
+    color: #736e56;
+    font-weight: bolder
+}
+
+.help-item {
+    float: right;
+    margin-right: 20px;
+    font-size: 22px;
+    margin-top: 26px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 128px;
+    background: #fff;
+    font-weight: bolder;
+}
+
+#wellcome {
+    margin: 0 auto;
+    width: 745px;
+    height: 80px;
+    line-height: 80px;
+    color: #395a73;
+    font-size: 30px;
+    border-bottom: 6px solid #395a73;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.detail {
+    width: 745px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+
+.detail-img {
+    float: left;
+    width: 404px;
+    margin-top: 28px;
+}
+
+.detail-article {
+    float: right;
+    background: url(help/detail-article-bg.jpg) top center no-repeat;
+    width: 315px;
+    float: right;
+    text-align: left;
+}
+
+.detail-article h3 {
+    color: #F00;
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.detail-article .text {
+    margin-top: 40px;
+    padding: 0 4px;
+    color: #85898c;
+    font-size: 22px;
+    font-weight: bolder;
+    line-height: 1.5em;
+}
+
+.detail-article .buttom {
+    margin-top: 20px;
+}

@@ -1,0 +1,759 @@
+@import url("reset.css");
+
+html {
+    font-family: Tahoma, Arial, Helvetica, STHeiti;
+    font-size: 12px;
+    background: #bdd7d8 url(../images/body_bg_school.gif) repeat-x;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a.s {
+    color: #fff;
+}
+
+a:hover, a:focus {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #fff;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "\20";
+    display: block;
+    clear: both;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* header start */
+.header {
+    height: 99px;
+    background: url(../images/bg_header_school.jpg) repeat-x;
+    margin-bottom: 15px;
+}
+
+.header .logo {
+    width: 211px;
+    height: 52px;
+    background: url(../images/logo_main_school.gif) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    margin-top: 20px;
+    float: left;
+}
+
+.header .header_R {
+    width: 640px;
+    float: right;
+}
+
+.header .user_msg {
+    padding-top: 6px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    color: #9db7c1;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.header .user_msg .esc {
+    color: #9db7c1;
+    margin: 0 30px 0 20px;
+}
+
+.yq_friend {
+    padding-left: 24px;
+    background: url(../images/icon1_school.png) no-repeat 0 -351px;
+    color: #fff;
+}
+
+/* 主导航 */
+.main_nav {
+    width: 510px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    float: right;
+}
+
+.main_nav li {
+    float: left;
+    width: 81px;
+    float: left;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.main_nav li a {
+    color: #fff;
+    display: block;
+}
+
+.main_nav li a:hover, .main_nav .current a {
+    background: url(../images/nav_hover_school.png) no-repeat 0 2px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main_nav li .new {
+    width: 23px;
+    height: 18px;
+    text-indent: -999px;
+    display: block;
+    position: absolute;
+    margin: -32px 0 0 74px;
+    _margin: -8px 0 0 0px;
+    overflow: hidden;
+    background: url(../images/new.png) no-repeat;
+}
+
+*+html .main_nav li .new {
+    margin: -8px 0 0 0px;
+}
+
+/* container start */
+.container {
+    padding-bottom: 50px;
+}
+
+.wrapper {
+    margin-bottom: 5px;
+}
+
+.c_L {
+    width: 630px;
+    float: left;
+    overflow: hidden;
+}
+
+.user_photo {
+    width: 65px;
+    height: 67px;
+    float: left;
+}
+
+.c_box {
+    width: 547px;
+    float: right;
+    position: relative;
+}
+
+.c_box .c_b_t {
+    width: 547px;
+    height: 15px;
+    background: url(../images/c_b_t.png) no-repeat;
+}
+
+.c_box .c_b_c {
+    width: 540px;
+    height: auto;
+    background: #ffffff;
+    table-layout: fixed;
+    display: block;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.c_box .c_b_b {
+    width: 547px;
+    height: 23px;
+    background: url(../images/c_b_b.png) no-repeat 0 0;
+}
+
+.c_box .c_b_arrow {
+    width: 8px;
+    height: 13px;
+    overflow: hidden;
+    background: url(../images/icon_png.png) no-repeat -2px -105px;
+    position: absolute;
+    top: 20px;
+    left: -8px;
+}
+
+.c_box h2 {
+    font-size: 25px;
+    font-family: Microsoft YaHei;
+    line-height: 36px;
+    margin: 10px 20px;
+}
+
+.c_box .text {
+    line-height: 24px;
+    color: #636363;
+    margin: 0 20px 10px 20px;
+    font-size: 14px;
+}
+
+.c_box .text a {
+    color: #636363;
+}
+
+.c_box .sp_msg {
+    height: 36px;
+    line-height: 36px;
+    padding-top: 8px;
+    margin: 0 20px;
+    background: url(../images/c_b_bar.png) no-repeat left top;
+    color: #38a7d4
+}
+
+.c_box .tb {
+    height: 28px;
+    line-height: 28px;
+    background: #ddeaef url(../images/icon1_school.png) no-repeat 5px -199px;
+    padding-left: 30px;
+    margin: 0 20px;
+}
+
+.c_box .tb dt {
+    float: left;
+    margin-right: 10px;
+}
+
+.c_box .tb dd {
+    float: left;
+    margin-right: 30px;
+}
+
+.c_box .tb dd input {
+    float: left;
+    margin: 7px 5px 0 0;
+    _margin: 2px 0 0 0;
+}
+
+.c_box .p_c {
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 20px;
+}
+
+.c_box .p_c a {
+    padding: 5px 0;
+    color: #666;
+    padding-left: 20px;
+}
+
+.c_box .p_c .plun {
+    background: url(../images/icon1_school.png) no-repeat 0 -234px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.c_box .p_c .czt {
+    background: url(../images/icon1_school.png) no-repeat 0 -262px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.c_box .p_c .zf {
+    background: url(../images/zf.png) no-repeat 0 4px;
+    cursor: pointer;
+}
+
+.c_box .fb {
+    width: 500px;
+    height: 84px;
+    padding: 15px 20px 0 20px;
+    background: #fafafa; /* position:absolute; left:0; bottom:10px;*/
+}
+
+/*.c_box .fb_bg {height:50px;}*/
+.c_box .fb .fb_input_text {
+    width: 418px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ccc;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.c_box .fb .fb_btn {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    float: right;
+    cursor: pointer;
+    background: #2d9bdd url(../images/btn-fb.png) no-repeat;
+    color: #fff;
+}
+
+.c_box .q_link {
+    position: absolute;
+    right: 7px;
+    top: 1px;
+    width: 15px;
+    height: 15px;
+    display: none;
+    background: #F00 url(../images/q_link.png) no-repeat;
+}
+
+.c_box:hover .q_link {
+    display: inline-block
+}
+
+.fb_u {
+    line-height: 30px;
+    width: 418px;
+    float: left;
+}
+
+.fb_u b {
+    float: left;
+    margin: 5px 5px 0 0;
+    _margin-top: 0px;
+}
+
+.hf_btn {
+    width: 33px;
+    height: 18px;
+    background: url(../images/hf.png) no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.c_msg {
+    height: 20px;
+    line-height: 20px;
+    color: #808080;
+    margin: 0 20px;
+}
+
+.c_msg .c_act {
+    width: 200px;
+    float: right;
+    text-align: right;
+}
+
+.c_msg .c_act a {
+    color: #808080;
+    margin: 0 10px;
+    float: right;
+}
+
+.c_msg .c_act .enjoy {
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin-top: 2px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/icon1_school.png) no-repeat -3px -294px;
+}
+
+.c_msg .c_act .enjoy:hover {
+    background: url(../images/icon1_school.png) no-repeat -3px -320px;
+}
+
+.c_msg .c_act .enjoying {
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    display: block;
+    background: url(../images/icon1_school.png) no-repeat -3px -320px;
+}
+
+.pages {
+    width: 400px;
+    padding-left: 150px;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px auto;
+    color: #fff;
+}
+
+.pages span, .pages a {
+    float: left;
+    margin-right: 10px;
+}
+
+.pages .disabled, .pages a {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: url(../images/pages.png) no-repeat 0 -32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.pages .current {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: url(../images/pages.png) no-repeat 0 0px;
+    font-weight: bold;
+}
+
+.pages a:hover {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background: url(../images/pages.png) no-repeat 0 0px;
+    font-weight: bold;
+}
+
+.c_R {
+    width: 251px;
+    padding-left: 11px;
+    float: right;
+    overflow: hidden;
+}
+
+.sider_t {
+    width: 251px;
+    height: 7px;
+    overflow: hidden;
+    background: url(../images/sider_t.png) no-repeat;
+}
+
+.sider_c {
+    width: 231px;
+    padding: 58px 10px 10px 10px;
+    background: #ffffff;
+}
+
+.sider_b {
+    width: 251px;
+    height: 30px;
+    overflow: hidden;
+    background: url(../images/sider_b.png) no-repeat -9px 0;
+}
+
+h2.sqrz {
+    width: 244px;
+    height: 48px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/bg_sider_h2_school.png) no-repeat;
+    position: absolute;
+    z-index: 99;
+    margin: 10px 0 10px -10px;
+}
+
+h2.wxs {
+    width: 244px;
+    height: 48px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/bg_sider_h2_school.png) no-repeat 0 -48px;
+    position: absolute;
+    z-index: 99;
+    margin: 10px 0 10px -10px;
+}
+
+.search {
+    height: 36px;
+}
+
+.search .search_input_text {
+    width: 178px;
+    height: 28px;
+    line-height: 22px;
+    padding: 0px 0 6px 5px;
+    background: url(../images/search_school.png) no-repeat 0 0;
+    border: none;
+    color: #fff;
+    float: left;
+}
+
+.search .search_btn {
+    width: 28px;
+    height: 30px;
+    margin-top: -2px;
+    margin-left: -4px;
+    background: url(../images/search_school.png) no-repeat -188px 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.sider_nav li {
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    background: url(../images/icon1_school.png) no-repeat;
+}
+
+.sider_nav li a {
+    color: #014a66;
+    font-size: 14px;
+}
+
+.sider_nav .sn_01 {
+    background-position: 0 0px;
+}
+
+.sider_nav .sn_02 {
+    background-position: 0 -26px;
+}
+
+.sider_nav .sn_03 {
+    background-position: 0 -55px;
+}
+
+.sider_nav .sn_04 {
+    background-position: 0 -81px;
+}
+
+.sider_nav .sn_05 {
+    background-position: 0 -110px;
+}
+
+.sider_nav .sn_06 {
+    background-position: 0 -140px;
+}
+
+.sider_nav .sn_07 {
+    background-position: 0 -169px;
+}
+
+.sider_sub_nav {
+    border-top: 1px solid #dedede;
+    padding-top: 10px;
+}
+
+.sider_sub_nav li {
+    width: 100px;
+    height: 39px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/sider_sub_nav.png) no-repeat;
+    float: left;
+    margin: 0 15px 10px 0;
+}
+
+.sider_sub_nav li a {
+    width: 100px;
+    height: 39px;
+    display: block;
+}
+
+.sider_sub_nav .ssn_01 {
+    background-position: -109px -2px;
+}
+
+.sider_sub_nav .ssn_02 {
+    background-position: -109px -184px;
+}
+
+.sider_sub_nav .ssn_03 {
+    background-position: -109px -48px;
+}
+
+.sider_sub_nav .ssn_04 {
+    background-position: -109px -230px;
+}
+
+.sider_sub_nav .ssn_05 {
+    background-position: -109px -94px;
+}
+
+.sider_sub_nav .ssn_06 {
+    background-position: -109px -276px;
+}
+
+.sider_sub_nav .ssn_07 {
+    background-position: -109px -139px;
+}
+
+.sider_sub_nav .ssn_01 a:hover {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -2px;
+}
+
+.sider_sub_nav .ssn_02 a:hover {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -184px;
+}
+
+.sider_sub_nav .ssn_03 a:hover {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -48px;
+}
+
+.sider_sub_nav .ssn_04 a:hover {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -230px;
+}
+
+.sider_sub_nav .ssn_05 a:hover {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -94px;
+}
+
+.sider_sub_nav .ssn_06 a:hover {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -276px;
+}
+
+.sider_sub_nav .ssn_07 a:hover {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -139px;
+}
+
+.sider_sub_nav .ssn_01 .active {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -2px;
+}
+
+.sider_sub_nav .ssn_02 .active {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -184px;
+}
+
+.sider_sub_nav .ssn_03 .active {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -48px;
+}
+
+.sider_sub_nav .ssn_04 .active {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -230px;
+}
+
+.sider_sub_nav .ssn_05 .active {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -94px;
+}
+
+.sider_sub_nav .ssn_06 .active {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -276px;
+}
+
+.sider_sub_nav .ssn_07 .active {
+    background: url(../images/sider_sub_nav.png) no-repeat 0 -139px;
+}
+
+.uesr_list li {
+    width: 58px;
+    padding: 0 8px;
+    height: 57px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.uesr_list li img {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #ccc;
+}
+
+.serivce_list {
+    padding-left: 10px;
+}
+
+.serivce_list li {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+    background: url(../images/icon_png.png) no-repeat;
+}
+
+.serivce_list li a {
+    color: #606161;
+}
+
+.serivce_list .sl_01 {
+    background-position: 5px 8px;
+}
+
+.serivce_list .sl_02 {
+    background-position: 5px -20px;
+}
+
+.serivce_list .sl_03 {
+    background-position: 5px -46px;
+}
+
+.serivce_list .sl_04 {
+    background-position: 5px -74px;
+}
+
+#help {
+    width: 32px;
+    height: 91px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/help.png) no-repeat;
+    position: fixed;
+    _position: absolute;
+    top: 200px;
+    _top: expression(documentElement.scrollTop+document.documentElement.clientHeight-400);
+    right: 0;
+}
+
+#help a {
+    width: 32px;
+    height: 91px;
+    display: block;
+}
+
+#goto_top {
+    width: 48px;
+    height: 48px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/top.png) no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#goto_top a {
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
+/* footer start */
+.footer {
+    line-height: 36px;
+    font-size: 12px;
+    text-align: center;
+    color: #0a3140;
+    font-family: Microsoft YaHei;
+}
+
+.myprofe {
+    width: 542px;
+    height: 94px;
+    background-image: url('../images/school_itembg2.gif') !important;;
+    background-image: url('../images/school_itembg.gif');
+}
+
+.myinfo {
+    font-size: 16px;
+    padding-top: 25px;
+    padding-left: 20px;
+    color: #eeeeee;
+}
+
+.myinfo span {
+    padding-top: 8px;
+}
+
+/*图片缩小*/
+.text img {
+    max-width: 500px;
+    width: expression(this.width > 500 ? "500px" : this.width);
+    height: auto;
+}
+   

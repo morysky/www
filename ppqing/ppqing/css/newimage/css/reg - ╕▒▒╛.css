@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+.main {
+    width: 900px;
+    margin: 0 auto;
+    background: url(../images/main_bg.jpg) no-repeat center top;
+}
+
+/* header_reg start */
+.header_reg {
+    height: 186px;
+    padding: 34px 0px 0 50px;
+}
+
+.header_reg .logo {
+    width: 402px;
+    height: 77px;
+    background: url(../images/logo_reg.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    float: left;
+}
+
+.header_reg .btn_login {
+    width: 87px;
+    height: 38px;
+    float: right;
+    background: url(../images/btn_login.jpg) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.header_reg .btn_login:hover {
+    background: url(../images/btn_login.jpg) no-repeat 0 -38px;
+}
+
+/* header_reg end */
+
+/* containter start */
+.slides {
+    width: 485px;
+    height: 350px;
+    overflow: hidden;
+    float: left;
+    margin-left: 50px;
+    _margin-left: 25px;
+}
+
+.slides .slides_img {
+    width: 485px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slides .slides_img li {
+    display: none;
+}
+
+.slides .slides_img li.cur {
+    display: block;
+}
+
+.register_form {
+    width: 350px;
+    height: 358px;
+    padding-bottom: 60px;
+    float: right;
+}
+
+.register_form h2 {
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    line-height: 30px;
+    margin: 20px 0 10px 0;
+}
+
+.input_wrapper {
+    width: 332px;
+    height: 44px;
+    line-height: 20px;
+    position: relative;
+}
+
+.input_wrapper .input_text, .input_off, .input_out {
+    border: none;
+    width: 210px;
+    height: 32px;
+    line-height: 32px;
+    float: left;
+    padding: 3px 10px 5px 10px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    background: url(../images/input_text_index.png) no-repeat;
+    color: #c4dbe3;
+}
+
+.input_on, .input_move {
+    border: none;
+    width: 210px;
+    height: 32px;
+    line-height: 32px;
+    float: left;
+    padding: 3px 10px 5px 10px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    background: url(../images/input_text_index1.png) no-repeat;
+}
+
+.input_wrapper .reg_btn {
+    width: 229px;
+    height: 49px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/btn_reg.png) no-repeat;
+    display: block;
+    margin-top: 10px;
+}
+
+.input_wrapper .reg_btn:hover {
+    background: url(../images/btn_reg1.png) no-repeat;
+}
+
+.reg_tip {
+    width: 160px;
+    height: 50px;
+    line-height: 40px;
+    overflow: hidden;
+    padding-left: 25px;
+    background: url(../images/XX.png) no-repeat 5px 12px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.input_wrapper .abc {
+    position: absolute;
+    right: 7px;
+    top: 1px;
+    width: 332px;
+    height: 44px;
+    display: inline-block;
+}
+
+.input_wrapper:hover .abc {
+    display: none
+}

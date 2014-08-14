@@ -1,0 +1,101 @@
+@charset "utf-8";
+html {
+    font-family: Tahoma, Arial, Helvetica, STHeiti;
+    background: #162E41 !important;
+    background: #0B2437;
+}
+
+body {
+    background: #162E41 !important;
+    background: #0B2437;
+    font: 14px/1.5 'Droid Serif', Georgia, Times, STHeiti;
+    height: 100%;
+}
+
+#wrap {
+    margin: 0 auto;
+    padding: 50px 0 100px;
+    position: relative;
+    width: 619px;
+}
+
+#about {
+    padding: 50px 0 140px;
+    word-wrap: break-word;
+}
+
+#about .about-top {
+    background: url("bgimg/about-top-bg.png") no-repeat scroll 0 0 transparent;
+    height: 14px;
+    overflow: hidden;
+}
+
+#about .about-content {
+    background: url("bgimg/about-content-bg.png") repeat-y scroll 0 0 transparent;
+    padding: 30px 59px 40px;
+    text-align: center;
+}
+
+#about .about-bottom {
+    background: url("bgimg/about-bottom-bg.png") no-repeat scroll 0 0 transparent;
+    height: 21px;
+}
+
+#postst .post .post-top {
+    background: url("bgimg/post-top-bg.png") no-repeat scroll 0 0 transparent;
+    height: 74px;
+    position: relative;
+}
+
+#postst .post .post-content {
+    background: url("bgimg/post-content-bg.png") repeat-y scroll 0 0 transparent;
+    overflow: hidden;
+    padding: 16px 59px 40px;
+}
+
+#postst .post .post-bottom {
+    background: url("bgimg/post-bottom-bg.png") no-repeat scroll 0 0 transparent;
+    height: 33px;
+}
+
+.clearfix, #content {
+    display: block;
+}
+
+#postst .post-top .post-time {
+    color: #999999;
+    font-size: 12px;
+    left: 100px;
+    position: absolute;
+    top: 50px;
+}
+
+#site_notice  a {
+    color: #ffffff;
+}
+
+#my-follow h4 {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.otherimg {
+    float: left;
+    margin: 6px;
+}
+
+.post_content {
+    table-layout: fixed;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+#user-contribute {
+    padding: 30px;
+}
+
+.othimages {
+    padding-top: 2px;
+    display: block;
+    border-top: 2px solid #dfdfdf;
+}

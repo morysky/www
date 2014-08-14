@@ -1,0 +1,292 @@
+#content {
+    background: url("bgimg/content_bg.png") repeat scroll 0 0;
+    margin-top: -8px;
+    padding: 0px !important;
+    width: 900px !important;
+    margin-left: 0px !important;
+    margin-left: 0px;
+    margin-bottom: -8px;
+    width: 900px;
+}
+
+#content {
+    background-image: url("bgimg/content_bg_edit_form.png");
+    padding: 0;
+}
+
+#text_post {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#text_post  h1 {
+    font-size: 26px;
+    color: #313131;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#text_post  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #515151;
+}
+
+/*************************************��ť*******************************/
+button.positive {
+    color: #529214;
+    margin-right: 10px;
+}
+
+button.positive:hover, button.positive.hover {
+    background-color: #E6EFC2;
+    border: 1px solid #C6D880;
+    color: #529214;
+}
+
+button.positive, button.negative, button.generic, input.generic {
+    border-style: solid;
+    color: #565656;
+    cursor: pointer;
+    font: 15px/36px Helvetica, Arial, sans-serif;
+}
+
+button.positive, button.negative, button.generic, input.generic {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    border-right: 1px solid #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    color: #565656;
+    cursor: pointer;
+    font: 15px/36px Helvetica, Arial, sans-serif;
+    height: 36px;
+    margin: 0;
+    overflow: visible;
+    padding: 0 14px 0 12px;
+    width: 1px;
+}
+
+h1 {
+    color: #2D4159;
+    font-family: Arial;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 24px;
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+input.text_field, textarea {
+    border: 1px solid #BBBBBB;
+    color: #222222;
+    font: 16px 'Lucida Grande', Helvetica, Arial, sans-serif;
+    margin: 0;
+    outline: 0 none;
+    padding: 7px;
+}
+
+.text_field_container {
+    font-size: 16px;
+}
+
+#text_post {
+    font-size: 16px;
+}
+
+.wide {
+    max-width: 590px;
+    min-width: 590px;
+    width: 590px;
+}
+
+.wideright {
+    max-width: 204px;
+    min-width: 204px;
+    width: 204px;
+}
+
+#right_column {
+    margin-right: 8px !important;
+    margin-right: 8px;
+}
+
+/************************************�ļ��ϴ������ʽ*************************************/
+.fu_list {
+    width: 620px;
+    background: #ebebeb;
+    font-size: 12px;
+}
+
+.fu_list td {
+    padding: 5px;
+    line-height: 26px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.fu_list table {
+    width: 100%;
+}
+
+.fu_list thead td {
+    background-color: #f4f4f4;
+}
+
+.fu_list b {
+    font-size: 14px;
+}
+
+/*file������ʽ*/
+a.files {
+    width: 90px;
+    height: 30px;
+    overflow: hidden;
+    display: block;
+    border: 1px solid #BEBEBE;
+    background: url(bgimg/fu_btn.gif) left top no-repeat;
+    text-decoration: none;
+}
+
+a.files:hover {
+    background-color: #FFFFEE;
+    background-position: 0 -30px;
+}
+
+/*file��Ϊ͸�������������*/
+a.files input {
+    margin-left: -350px;
+    font-size: 30px;
+    cursor: pointer;
+    filter: alpha(opacity = 0);
+    opacity: 0;
+}
+
+/*ȡ����ʱ�����߿�*/
+a.files, a.files input {
+    outline: none; /*ff*/
+    hide-focus: expression(this.hideFocus=true); /*ie*/
+}
+
+/**************************************************�༭�ұ�**************************/
+.advanced_option {
+    border-bottom: 1px solid #D8D6D6;
+    border-top: 1px solid #F8F7F7;
+    padding: 15px 0;
+    position: relative;
+}
+
+.advanced_option select {
+    font-size: 14px;
+}
+
+select {
+    border: 1px solid #BBBBBB;
+}
+
+.advanced_option select, .advanced_option input, .advanced_option textarea {
+    color: #666666;
+    font: 13px Arial, Helvetica;
+    padding: 5px;
+}
+
+input {
+    height: 28px;
+    font-zie: 16px;
+}
+
+#cke_top_gently_editor {
+    background-color: #fafafa;
+}
+
+.post .text, .post .title_text, .post .url_link, .post .title_link {
+
+    background: none repeat scroll 0 0 white;
+
+    border: 1px solid #D3D3D3;
+
+    border-radius: 8px 8px 8px 8px;
+
+    clear: both;
+
+    font-size: 20px;
+
+    height: 30px;
+
+    line-height: 30px;
+
+    margin-bottom: 10px;
+
+    padding: 5px 0;
+
+    width: 600px;
+
+}
+
+#songCmplPrompt {
+
+    -moz-border-bottom-colors: none;
+
+    -moz-border-image: none;
+
+    -moz-border-left-colors: none;
+
+    -moz-border-right-colors: none;
+
+    -moz-border-top-colors: none;
+
+    background: none repeat scroll 0 0 white;
+
+    border-color: -moz-use-text-color #D3D3D3 #D3D3D3;
+
+    border-radius: 0 0 10px 10px;
+
+    border-right: 1px solid #D3D3D3;
+
+    border-style: none solid solid;
+
+    border-width: 0 1px 1px;
+
+    color: #68879F;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+    padding: 10px 10px 0;
+
+    position: absolute;
+
+    top: 280px;
+
+    width: 580px;
+
+    z-index: 1;
+
+}
+
+.post .title_text input, .post .url_link input, .post .title_link input {
+
+    border: 0 none;
+
+    font-size: 20px;
+
+    height: 30px;
+
+    width: 420px;
+
+}
+
+input, textarea {
+
+    outline: medium none;
+
+}

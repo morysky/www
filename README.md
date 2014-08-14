@@ -1,4 +1,4 @@
-www
+web
 ===
 
-部署在云端的Web工程
+My php web project

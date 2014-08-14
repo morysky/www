@@ -1,0 +1,513 @@
+body, p, span, ul, li h2, h3, h4, h5, form, input, textarea, label {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+}
+
+body {
+    color: #444444;
+    font: 14px/1.4 Arial, Helvetica, sans-serif;
+}
+
+#login-wrap .login-main {
+    background: url("admin/login_bg.png") no-repeat scroll 0 0 transparent;
+    height: 401px;
+    margin: 80px auto 0;
+    padding: 22px;
+    width: 646px;
+}
+
+#login-wrap .login-main .login-t {
+    background: url("admin/login_t.png") repeat-x scroll 0 0 transparent;
+    height: 60px;
+    position: relative;
+}
+
+#login-wrap .login-main .login-m .admin-txt {
+    width: 180px;
+}
+
+.input-box {
+    border-color: #9E9E9E #E2E2E2 #E2E2E2 #9E9E9E;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+    padding: 3px;
+    vertical-align: middle;
+}
+
+#login-wrap .login-main .login-m {
+    padding: 40px 0 0 156px;
+}
+
+#login-wrap .login-main .login-m label {
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-size: 14px;
+    text-align: right;
+    width: 74px;
+}
+
+#login-wrap .login-main .login-m .account1 {
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.login-m .account3 img {
+    height: 50px;
+    padding-top: 10px;
+    margin-right: 5px;
+    vertical-align: -3px;
+    width: 160px;
+}
+
+#login-wrap .login-main .login-m .admin-btn {
+    background-position: -264px -153px;
+    border: medium none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 36px;
+    line-height: 36px;
+    margin: 24px 0 0 72px;
+    width: 106px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+img {
+    border: 0 none;
+}
+
+#login-wrap .login-main .admin-logo {
+    background-position: -260px -345px;
+    height: 32px;
+    left: 35px;
+    position: absolute;
+    top: 14px;
+    width: 137px;
+}
+
+#login-wrap .login-main .tit {
+    background-position: -260px -397px;
+    height: 17px;
+    position: absolute;
+    right: 21px;
+    top: 21px;
+    color: #ffffff;
+    font-weight: bold;
+    width: 1 � � 9px;
+}
+
+#header {
+    background: url("admin/x_bg.gif") repeat-x scroll 0 0 transparent;
+    border-bottom: 1px solid #7DB4E5;
+    height: 73px;
+    min-width: 840px;
+    position: relative;
+}
+
+#header .logo {
+    background: url("admin/logo.png") no-repeat scroll 0 0 transparent;
+    height: 36px;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    width: 240px;
+}
+
+#container {
+    background: url("admin/container_bg.gif") repeat-x scroll center top transparent;
+    min-width: 820px;
+    overflow: hidden;
+    padding: 10px 10px 0;
+}
+
+#header .log-info {
+    color: #7A7A7A;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+#header .menu {
+    bottom: -1px;
+    left: 300px;
+    position: absolute;
+}
+
+#header .menu #function.current {
+    background-position: -10px -10px;
+}
+
+#header .menu #operations.current {
+    background-position: -107px -10px;
+}
+
+#header .menu #quise.current {
+    background-position: -204px -10px;
+}
+
+#header .menu #sub-unit.current {
+    background-position: -301px -10px;
+}
+
+#header .menu #account.current {
+    background-position: -398px -10px;
+}
+
+#header .menu #operations {
+    background-position: -107px -54px;
+}
+
+#header .menu #quise {
+    background-position: -204px -54px;
+}
+
+#header .menu #sub-unit {
+    background-position: -301px -54px;
+}
+
+#header .menu #account {
+    background-position: -398px -54px;
+}
+
+#header .menu #function {
+    background-position: -10px -54px;
+}
+
+#container .sidebar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #B0D1EF;
+    border-radius: 3px 3px 3px 3px;
+    float: left;
+    overflow: hidden;
+    width: 171px;
+}
+
+.sub-menu-info a {
+    color: #0082CB;
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin: 10px;
+    text-indent: 16px;
+}
+
+#container .sidebar .sub-menu h3 {
+    background: url("admin/ww.png") repeat-x scroll center bottom transparent;
+    border-bottom: 1px solid #B0D1EF;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 15px;
+}
+
+.path {
+    background: none repeat scroll 0 0 #EFEFEF;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.main {
+    border-color: #B0D1EF;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 181px;
+}
+
+#index {
+    background-color: #F3F7FB;
+}
+
+#header .menu a {
+    float: left;
+    height: 34px;
+    margin-left: 7px;
+    width: 87px;
+}
+
+.path-icon, .forbidden, .using, .change-order, .save-order, .page-set, .add-list, .add-new-topic, .change-icon, .del-icon, .add-new-category, .add-userlist, .add-new-user, .add-new-module, .ban, .unban, .renzheng-y, .renzheng-n, .add-new-authenticateuser, .add-new-link, .clos, a.clos:hover, .add-extend, .return, .add-category, .delete, .add-unit, .menu a, .color-slt em, .copy-code, .w-show, .w-user, .w-topic, .admin-logo, .tit, .admin-btn, .admin-btn-no, .a-error, .active-one, .active-one-no, .pwd-t-icon, .active-btn, .active-btn-no, .add-topic, .add-topic-list, .key-tip-icon, .range-l, .range-r, .range-icon, .update-link, .tips-icon, .view-weibo, .view-list, .view-topic, .cancel-rec, .page-set, .page-hide, .page-opt, .plugin-on, .plugin-off, .cancel-ext, .view, .pop-pic .arrow {
+    background: url("admin/admin_all_bg.png") no-repeat scroll 0 0 transparent;
+}
+
+.log-info a {
+    color: #212121;
+}
+
+#header .log-info .back-home {
+    background: none repeat scroll 0 0 #F9FBFD;
+    border-color: #B0D1EF;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 60px;
+}
+
+.main-wrap .set-wrap {
+    position: relative;
+    padding: 15px 10px 30px;
+    background: #fff;
+    _zoom: 1;
+}
+
+.path {
+    background: none repeat scroll 0 0 #EFEFEF;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.input-box {
+    border-color: #9E9E9E #E2E2E2 #E2E2E2 #9E9E9E;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+    padding: 3px;
+    vertical-align: middle;
+}
+
+.site-info-a {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.site-info-a, .adminname-show, .code-area, .code-area, .con-wrap, .pwd-t {
+    background: url("admin/line_x.gif") repeat-x scroll center bottom transparent;
+}
+
+.site-info-a p span {
+    color: #AFAFAF;
+}
+
+.site-box-w {
+    width: 220px;
+}
+
+.path .path-icon {
+    background-position: -497px -349px;
+    float: left;
+    height: 6px;
+    margin: 12px 5px 0 0;
+    width: 4px;
+}
+
+.site-box-area {
+    height: 70px;
+    overflow-x: hidden;
+    resize: none;
+    width: 380px;
+}
+
+/*�ɹ���ʾ*/
+.tips_box {
+    margin: 20px 10px;
+    padding: 8px 5px;
+    height: 80px;
+    background: #f2f8fe;
+    border: 3px solid #bdd3e8;
+}
+
+.tips_box .tips_r {
+    margin: 10px auto;
+    width: 450px;
+}
+
+.tips_box .tips_r h3 {
+    margin-bottom: 10px;
+    padding-left: 32px;
+    height: 26px;
+    line-height: 26px;
+    background: url(admin/success_icon.png) no-repeat;
+    color: #35b700;
+    font-size: 16px;
+}
+
+.tips_box .tips_r h3.error {
+    background: url(admin/error_icon.png) no-repeat;
+    color: #df252c;
+}
+
+.tips_box .tips_r a, .tips_box .tips_r a:visited {
+    color: #00A1ED;
+    text-decoration: underline;
+}
+
+.tips_box .tips_r a:hover {
+    color: #333;
+}
+
+h4.main-title {
+    background: none repeat scroll 0 0 #EAF3FA;
+    border: 1px solid #EAF3FA;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+}
+
+.set-area-int .serch-tips {
+    margin-bottom: 8px;
+}
+
+.user-list-box1 {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.set-area-int .serch-user {
+    background: none repeat scroll 0 0 #F4F8FC;
+    border: 1px solid #D9E7F4;
+    height: 40px;
+    overflow: hidden;
+    padding: 15px 10px 0;
+}
+
+.serch-btn input {
+    background: url("admin/admin_all_bg.png") no-repeat scroll -10px -153px transparent;
+    border: 0 none;
+    cursor: pointer;
+    height: 23px;
+    line-height: 23px;
+    vertical-align: -2px;
+    width: 62px;
+}
+
+.set-area-int .user-list p {
+    margin: 15px 0;
+}
+
+.table-border {
+    border-collapse: collapse;
+}
+
+.td-title-bg {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.table-border td {
+    border: 1px solid #CCCCCC;
+    height: 26px;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.td-title-bg {
+    background: none repeat scroll 0 0 #F4F4F4;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+}
+
+.tfoot-bg {
+    background: none repeat scroll 0 0 #F4F4F4;
+    height: 30px;
+}
+
+.pre-next {
+    float: right;
+}
+
+.view-weibo {
+    background-position: -497px -544px;
+    margin-right: 12px;
+    padding-left: 16px;
+}
+
+.ban {
+    background-position: -497px -133px;
+    margin-right: 10px;
+    padding-left: 18px;
+}
+
+.renzheng-y {
+    background-position: -497px -101px;
+    padding-left: 15px;
+}
+
+.pre-next a {
+    color: #1663B0;
+}
+
+td a {
+    color: #0855A3;
+}
+
+.account3 a {
+    color: #ffffff;
+}
+
+.renzheng-n {
+    background-position: -497px -68px;
+    padding-left: 15px;
+}
+
+.forbidden {
+    padding: 0 0 0 18px;
+    background-position: -497px -231px;
+}
+
+.unban {
+    margin-right: 10px;
+    padding-left: 18px;
+    background-position: -497px -165px;
+}
+
+.del-icon {
+    background-position: -497px -36px;
+    margin-left: 12px;
+    padding-left: 12px;
+}
+
+.keyword-width {
+    font-size: 12px;
+    height: 100px;
+    overflow: hidden;
+    resize: none;
+    vertical-align: text-bottom;
+    width: 300px;
+}
+
+.key-tip-icon {
+    background-position: -497px -477px;
+    padding-left: 13px;
+}
+
+.user-list-box1 .keyword-tips {
+    color: #AFAFAF;
+}
+
+.user-list-box1 .keyword-btn-position {
+    margin-top: 20px;
+}
+
+.button input {
+    background: url("admin/admin_all_bg.png") no-repeat scroll -164px -153px transparent;
+    border: 0 none;
+    cursor: pointer;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 10px;
+    width: 95px;
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+.sub_nav {
+}
+
+.sub_nav li {
+    float: left;
+    width: 75px;
+    text-align: center;
+}
+

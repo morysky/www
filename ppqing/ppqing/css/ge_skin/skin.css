@@ -1,0 +1,165 @@
+@charset "utf-8";
+html {
+    background: #3D4E68;
+}
+
+body {
+    background: url(bgimg/bg.jpg) repeat;
+
+}
+
+#content {
+    border-radius: 0px;
+
+}
+
+#posts .post {
+    background-color: #919191;
+    border-radius: 0px 0px 0px 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+#site_notice {
+    background: #29375C;
+    height: 24px;
+    line-height: 18px;
+}
+
+#site_notice a {
+    padding-top: 2px;
+    font-size: 14px;
+    color: #e1e1e1;
+    padding: 2px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #616161;
+
+}
+
+#right {
+    padding-right: 12px;
+}
+
+#content {
+    background: none;
+
+}
+
+#posts .post .post_avatar {
+    background: #000000;
+    border-top: 0px;
+    border-bottom: 0px;
+
+}
+
+#container {
+    padding: 0px;
+    width: 1170px;
+}
+
+#right_column {
+    color: #212121;
+}
+
+.topitem {
+    width: 540px;
+    height: 240px;
+    background: url(bgimg/topitem.gif) no-repeat #D9711C;;
+
+}
+
+.botitem {
+    width: 540px;
+    height: 240px;
+    background: url(bgimg/botitem.gif) no-repeat #D9711C;;
+
+}
+
+#content {
+    background: url(bgimg/bg.jpg) repeat;
+    width: 1150px;
+    width: 1150px !important
+}
+
+#left_column {
+    width: 540px;
+}
+
+#right_column {
+    padding-top: 0px;
+    width: 540px;
+    width: 540px !important;
+}
+
+#posts {
+    margin: 0px;
+}
+
+.itemtop {
+    width: 100%;
+    height: 24px;
+    background-image: url(bgimg/itembg.gif);
+    margin-bottom: 0px;
+}
+
+.post_content {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.post_controls {
+    padding: 4px;
+    margin-bottom: 0px;
+}
+
+.post_controls a {
+
+}
+
+.post_info {
+    height: 30px;
+    padding: 4px;
+    margin-bottom: 0px;
+
+}
+
+#posts .post .post_controls {
+    color: #A8B1BA;
+    font: bold 13px/15px Arial, Helvetica;
+    margin-bottom: 0px;
+    min-height: 16px;
+    width: 500px;
+}
+
+#posts .post .post_info {
+    color: #A8B1BA;
+    font: bold 13px/15px Arial, Helvetica;
+    margin-bottom: 0px;
+    min-height: 16px;
+    width: 500px;
+}
+
+.newavatar img {
+    background: #ffffff;
+    border: 4px solid #fafafa;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.tadescs {
+    padding-top: 24px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.pagea {
+    background: #1A7388;
+}
+
+.otherimg {
+    width: 54px;
+    float: left;
+    margin: 2px;
+    padding: 2px;
+    height: 80px;
+
+}

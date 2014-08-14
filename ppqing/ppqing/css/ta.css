@@ -1,0 +1,115 @@
+#site_notice {
+    background: url("bgimg/site_notice_bg_ta.png") repeat-x scroll center bottom #31546F;
+    color: #313131;
+    font-size: 18px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    text-shadow: 1px 1px 5px #213342;
+}
+
+#site_notice a {
+    border: 0px;
+    border-radius: 5px 5px 5px 5px;
+    color: #313131;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 4px;
+}
+
+#site_notice a:hover {
+    color: #ffffff;
+    background: #2B5384;
+    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+.facetop {
+    background: #eeeeee;
+}
+
+.facecss {
+    color: #919191;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faceitem input {
+    width: 100px;
+    border: 1px solid #a1a1a1;
+    background: #f4f4f4;
+    height: 20px;
+
+}
+
+.faceitem a {
+    color: #919191;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faceitem {
+    padding: 5px;
+}
+
+.otherimg {
+    width: 54px;
+    float: left;
+    margin: 2px;
+    padding: 2px;
+    height: 60px;
+}
+
+.otherimg img {
+    border: 2px solid #ffffff;
+}
+
+.otherimg a {
+    font-size: 11px;
+}
+
+.cke_skin_kama .cke_wrapper {
+    background: none;
+}
+
+div.CONTENT ul.POSTS div.ENTRY div.POST ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.spsmallpic ul {
+    list-style: none outside none;
+}
+
+.spsmallpic {
+
+    clear: block;
+    display: block;
+    margin-bottom: 8px;
+
+}
+
+.spsmallpic ul li img {
+    width: 160px;
+
+}
+
+.spsmallpic li {
+    display: inline;
+    margin: 1px;
+    width: 162px;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+.wide {
+    max-width: 590px;
+    min-width: 590px;
+    width: 590px;
+}

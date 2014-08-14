@@ -1,0 +1,258 @@
+@import url("reset.css");
+
+html {
+    font-family: Verdana, Arial, Helvetica, "宋体", sans-serif;
+    font-size: 12px;
+    background: #1a4f6a url(../images/body_bg.png) repeat-x;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a.s {
+    color: #007ec0;
+}
+
+a:hover, a:focus {
+    color: #ff5e10;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #007ec0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "\20";
+    display: block;
+    clear: both;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.main {
+    width: 900px;
+    margin: 0 auto;
+    background: url(../images/main_bg.jpg) no-repeat center top;
+}
+
+/* header start */
+.header {
+    height: 186px;
+    padding: 34px 0px 0 50px;
+}
+
+.header .logo {
+    width: 402px;
+    height: 77px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    float: left;
+}
+
+.header .btn_login {
+    width: 87px;
+    height: 38px;
+    float: right;
+    background: url(../images/btn_login.jpg) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.header .btn_login:hover {
+    background: url(../images/btn_login.jpg) no-repeat 0 -38px;
+}
+
+.header .btn_reg {
+    width: 87px;
+    height: 38px;
+    float: right;
+    background: url(../images/btn_reg.jpg) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.header .btn_reg:hover {
+    background: url(../images/btn_reg.jpg) no-repeat 0 -38px;
+}
+
+.header .loginpage {
+    position: relative;
+    top: 200px;
+    left: 40px;
+}
+
+/* header end */
+
+/* containter start */
+.slides {
+    width: 485px;
+    height: 350px;
+    overflow: hidden;
+    float: left;
+    margin-left: 50px;
+    _margin-left: 25px;
+}
+
+.slides .slides_img {
+    width: 485px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slides .slides_img li {
+    display: none;
+}
+
+.slides .slides_img li.cur {
+    display: block;
+}
+
+/*.slides .slides_img .slide_li1 {width:485px; height:350px;background:url(../images/banner1.png) no-repeat 53px 18px;}
+.slides .slides_img .slide_li2 {width:485px; height:350px;background:url(../images/banner2.png) no-repeat 53px 18px;}
+.slides .slides_img .slide_li3 {width:485px; height:350px;background:url(../images/banner3.png) no-repeat 53px 18px;}*/
+
+.reg_form {
+    width: 350px;
+    height: 358px;
+    padding-bottom: 60px;
+    float: right;
+}
+
+.reg_form h2 {
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    line-height: 30px;
+    margin: 20px 0 10px 0;
+}
+
+.input_wrapper {
+    width: 332px;
+    height: 44px;
+    line-height: 20px;
+    position: relative;
+}
+
+.input_wrapper .input_text, .input_off, .input_out {
+    border: none;
+    width: 210px;
+    height: 32px;
+    line-height: 32px;
+    float: left;
+    padding: 3px 10px 5px 10px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    background: url(../images/input_text_index.png) no-repeat;
+    color: #c4dbe3;
+}
+
+.input_on, .input_move {
+    border: none;
+    width: 210px;
+    height: 32px;
+    line-height: 32px;
+    float: left;
+    padding: 3px 10px 5px 10px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    background: url(../images/input_text_index1.png) no-repeat;
+}
+
+.input_wrapper .reg_btn {
+    width: 229px;
+    height: 49px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/btn_reg.png) no-repeat;
+    display: block;
+    margin-top: 10px;
+}
+
+.input_wrapper .reg_btn:hover {
+    background: url(../images/btn_reg1.png) no-repeat;
+}
+
+.login_form {
+    height: 358px;
+    width: 600px;
+    padding-bottom: 60px;
+    position: relative;
+    top: 150px;
+    left: 160px;
+}
+
+.login_input {
+    float: left;
+    width: 239px;
+}
+
+.login_button {
+    width: 120px;
+    float: left;
+}
+
+.login_btn {
+    width: 118px;
+    height: 39px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../images/login_button.png) no-repeat;
+    display: block;
+}
+
+.login_btn:hover {
+    background: url(../images/login_button1.png) no-repeat;
+}
+
+.forgetpass {
+    color: #0d506b;
+    text-align: right;
+    position: relative;
+}
+
+.forgetpass a {
+    color: #0d506b;
+}
+
+/* contenter end */
+
+/* footer start */
+.footer {
+    line-height: 36px;
+    position: relative;
+    z-index: 90;
+    font-size: 12px;
+    text-align: center;
+    color: #0D506B;
+    font-family: Microsoft YaHei;
+}
+
+.footer a {
+    color: #0D506B;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.input_wrapper .reg-label {
+    color: #C4DBE3;
+    cursor: text;
+    font-size: 18px;
+    left: 8px;
+    position: absolute;
+    top: 8px;
+    font-family: Microsoft YaHei;
+}
