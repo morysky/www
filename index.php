@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>YaoKun Home</title>
+<title>YaoKun's Home</title>
 <!-- 新 Bootstrap 核心 CSS 文件 -->
 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -31,9 +31,8 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="me.php">About me</a></li>
-            <li><a href="yii/testdrive/">Yii</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/blog/?page_id=2">About me</a></li>
+            <li><a href="app/">Yii</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
