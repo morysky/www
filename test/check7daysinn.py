@@ -10,7 +10,8 @@ import smtplib
 from email.mime.text import MIMEText  
 import time
 
-day_range = 4
+day_range = 10
+how_often = 10000
 url = "http://localhost/test/curl_api.php?date="
 
 # 写个写法好朴素啊
@@ -101,12 +102,14 @@ def mysendemail(subject, html):
 def local_log(data):
     logtime = time.strftime('%Y-%m-%d  %H:%M',time.localtime(time.time()))
     logfile = open("local_log.txt", "a")
+    print logtime+" 找到，已发送邮件"
     logfile.write(logtime)
     logfile.write(data)
     logfile.write("\n\n")
     logfile.close()
 
 while (True):
+    print "开始自动监视"
     today=time.strftime("%Y-%m-%d", time.localtime())
     tmp = ""
     for i in range(0, day_range):
@@ -124,4 +127,4 @@ while (True):
         local_log(tmp)
         html = "<html>" + tmp + "</html>"
         mysendemail("7天2000积分房自动邮件", html)
-    time.sleep(10000)
+    time.sleep(how_often)
