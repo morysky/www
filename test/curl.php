@@ -14,7 +14,6 @@
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 
-
 </head>
 <body>
 
@@ -84,18 +83,21 @@
 	//$user_agent = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)";
 	$check2000->total_set($user_agent, $HTTP_Address, $HTTP_Params, 1);
 	$result = $check2000->request();
+	$final_result;
+	//合适的价格分界线
+	$price_bound = 160;
 	while(list($key,$val)= each($result['content'])) {
 		$has2000 = false;
-		$districtStatus = "";
+		$districtOrder = 0;
 		$isGoodPrice = false;
 		if($val['districtName'] == "海淀区")
-			$districtStatus = " danger";
+			$districtOrder = 10;
 		else if($val['districtName'] == "朝阳区")
-			$districtStatus = " warning";
+			$districtOrder = 5;
 		else
-			$districtStatus = " active";
+			$districtOrder = 1;
 		
-		if (intval($val['lowestPrice'])-160 > 0)
+		if (intval($val['lowestPrice'])- $price_bound > 0)
 			$isGoodPrice = true;
 		foreach($val['currentActivities'] as $act){
 			if($act == "P2000"){
@@ -104,9 +106,15 @@
 			}
 		}
 
-		if($has2000 && $isGoodPrice)
-			echo "<tr class=$districtStatus><td>" .$val['name']. "</td><td>" .$val['lowestPrice']. "</td><td>" .$val['districtName']. "</td></tr>";
+		if($has2000 && $isGoodPrice){
+			$final_result[$val['innId']]['name'] = $val['name'];
+			$final_result[$val['innId']]['district_order'] = $districtOrder;
+			$final_result[$val['innId']]['price'] = $val['lowestPrice'];
+			$final_result[$val['innId']]['district'] = $val['districtName'];
+			echo "<tr><td>" .$val['name']. "</td><td>" .$val['lowestPrice']. "</td><td>" .$val['districtName']. "</td></tr>";
+		}
 	}
+	var_dump($final_result);
 
 //垃圾代码
 	/*
