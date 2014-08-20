@@ -1,3 +1,10 @@
+<?php
+	//默认去找4天后的酒店
+	if(!isset($_GET['date'])){
+		date_default_timezone_set('Asia/Shanghai');
+		$query_date = date('y-m-d', time()+4*60*60*24);
+	}
+?>
 <html>
 <head>
 <meta charset="utf-8">
@@ -17,22 +24,19 @@
 </head>
 <body>
 
-<br><br><br>
+<br><br>
 
 <div class="container-fluid">
 	<div class="col-xs-6 col-md-2"></div>
 	<div class="col-xs-6 col-md-8">
 		<button class="btn btn-primary btn-lg btn-block">发起请求</button>
 		<br>
-		<div class="alert alert-success" role="alert">当前查询日期：	<?php echo $_GET['date']; ?></div>	
-		<table class ="table table-bordered">
-		<thead>
-			<td>店名</td>
-			<td>最低价</td>
-			<td>所属区域</td>
-		</head>
-		<tbody>
-
+			<div class="input-group input-group-lg">
+			<span class="input-group-addon">当前查询日期: </span>
+			<input type="text" class="form-control" placeholder="date">
+			</div>
+			<br>
+		<div class='alert alert-success' role='alert'>查询成功</div>
 <?php
 	class curl{
 		//curl连接的实例
@@ -77,7 +81,7 @@
 	$check2000 = new curl();
 
 	$HTTP_Address="http://m.7daysinn.cn/q/inns?"; 
-	$HTTP_Params="cityId=2&fromDate=" .$_GET['date']. "&days=1&getQuota=true&bookingMode=point"; 
+	$HTTP_Params="cityId=2&fromDate=" .$query_date. "&days=1&getQuota=true&bookingMode=point"; 
 	
 	$user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.77.4 (KHTML, like Gecko) Version/7.0.5 Safari/537.77.4";
 	//$user_agent = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)";
@@ -107,15 +111,40 @@
 		}
 
 		if($has2000 && $isGoodPrice){
-			$final_result[$val['innId']]['name'] = $val['name'];
-			$final_result[$val['innId']]['district_order'] = $districtOrder;
-			$final_result[$val['innId']]['price'] = $val['lowestPrice'];
-			$final_result[$val['innId']]['district'] = $val['districtName'];
-			echo "<tr><td>" .$val['name']. "</td><td>" .$val['lowestPrice']. "</td><td>" .$val['districtName']. "</td></tr>";
+			$final_result[$districtOrder][] = array("price" => $val['lowestPrice'], "name" => $val['name'], "district" => $val['districtName']);
 		}
 	}
-	var_dump($final_result);
+?>
+		<table class ="table table-bordered">
+		<thead>
+			<td>店名</td>
+			<td>最低价</td>
+			<td>所属区域</td>
+		</head>
+		<tbody>
+<?php
+	//遍历结果数组
+	if(!count($final_result) == 0)
+		sort($final_result);
+	for($i = 0; $i< count($final_result); $i++){
+		rsort($final_result[$i]);
+		for($j = 0; $j < count($final_result[$i]); $j++){
+			echo "<tr><td>" .$final_result[$i][$j]['name']. "</td><td>" .$final_result[$i][$j]['price']. "</td><td>" .$final_result[$i][$j]['district']. "</td></tr>";
+		}
+	}
+?>
+		</tbody>
+		</table>
+	</div>
+	<div class="col-xs-6 col-md-2"></div>
+</div>
 
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+<?php
 //垃圾代码
 	/*
 	function _rand() { 
@@ -133,17 +162,5 @@
 	样例数据
 	[0]=> array(18) { ["innId"]=> int(663) ["name"]=> string(34) "7天北京石景山古城首钢店" ["firstCharsOfPinyin"]=> string(10) "7TSJSGCSGD" ["cityId"]=> int(2) ["cityName"]=> string(6) "北京" ["districtId"]=> int(12) ["districtName"]=> string(12) "石景山区" ["address"]=> string(37) "北京市石景山区古城西街5号" ["score"]=> float(0.945) ["orderWeight"]=> float(0.84749997) ["thumbnailPath"]=> string(79) "http://img1.plateno.com/inn/010059/e85b8456420a25e760110b65d7b6bff7_120_120.jpg" ["lowestPrice"]=> float(177) ["hasRoom"]=> bool(true) ["hasWifi"]=> bool(true) ["hasPark"]=> bool(true) ["canUseCashCoupon"]=> bool(true) ["brandId"]=> int(1) ["currentActivities"]=> array(4) { [0]=> string(2) "77" [1]=> string(5) "P5000" [2]=> string(2) "99" [3]=> string(5) "P7000" } }
 
-
 	*/
 ?>
-		</tbody>
-		</table>
-	</div>
-	<div class="col-xs-6 col-md-2"></div>
-</div>
-
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-</body>
-</html>
